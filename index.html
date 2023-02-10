@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <a class="gotopbtn"href="#"><i class="fa-solid fa-angle-up"></i></a>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for (tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <!--------------------------------Intro------------------------------------------->
+ <div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="#"><span>Sum</span>it.</a></div>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact </a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm<span> Sumit  </span>Pradhan</h1><br>
+                <p>I am a self motivated and a hardworking<br> Computer Science student.</p>
+        </div>
+    </div>
+ </div>
+ <!--------------------------------About------------------------------------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/image/about.jpg">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title"><span>About</span> Me</h1>
+            <p>Hardworking college student with a specialization in designing. Good at time management and communication.A highly passionate, competitive and motivated student pursuing
+                degree in Computer Science, seeking for experience in the field that
+                match my academic qualifications.</p>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links"onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Python</span><br>Building Caesar Cipher </li>
+                <li><span>Java</span><br>Building Merge Sort</li>
+            </ul>
+            </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022 - Current</span><br>Designing Web/App interfaces</li>
+                <li><span>2020 - 2022</span><br>Web app Development</li>
+                <li><span>2018 - 2020</span><br>Building Calculator</li>
+            </ul>
+            </div>
+        <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2022 - Present</span><br>Bsc(hons) at Herald College</li>
+                <li><span>2020 - 2022</span><br>+2 from Liverpool College</li>
+                <li><span>2008 - 2020</span><br>SEE from Gyan Niketan School</li>
+              </ul>
+           </div>
+       </div>
+    </div>
+</div>
+<a href="#" class="btn">See more</a>
+  </div>
+</div>
+ <!--------------------------------Blog------------------------------------------->
+      <div id="blog">
+        <div class="container">
+            <div class="bl">
+            <h1 class="sub-title">My<span> Blogs</span></h1></div>
+            <div class="blog-list">
+                <div>
+                    <i class="fa-solid fa-blog"></i> 
+                    <h2>Week 1</h2>
+                    <p>Hello, Everyone! My name is Sumit Pradhan and I am from Shankhamul, Ktm. I am currently studying B.Sc.(hons) at Herald College Kathmandu. I am really passionate about web development, and I'm always looking for new ways to learn and improve my skills. I'm also a firm believer of teamwork, and I believe that working together is the best way to achieve success. I'll be sharing a few posts about the first weeks of college including my experience</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-blog"></i>
+                    <h2>Week 2</h2>
+                    <p>Last week, I had post blog about my first weeks experience at Herald college. You all must be thinking, how did I end up choosing Herald College. It was very difficult while choosing a best college which provide Better opportunities and environment among various options I had choose Herald. Today I will be sharing my experience about how and why I ended up decided to be a part of Herald Student.</p>
+                <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-blog"></i>
+                    <h2>Week 3</h2>
+                    <p>Last week, I had shared about my experience about how did I end up choosing Herald College. The learning experience here is very effective and different. Today I will be sharing third week experience at Herald college.
+                        Herald college applies L-T-W (Lecture , Tutorial and Workshop) teaching method which has provided me with a unique learning experience.</p>
+                <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--------------------------------Project------------------------------------------->
+      <div id="project">
+           <div class="container">
+            <div class="pro">
+            <h1 class="sub-title">My <span>Projects</span> </h1> </div>
+            <div class="project-list">
+                <div class="project">
+                 <img src="/image/merge sort.jpg">  
+                <div class="layer">
+                    <h3>Merge Sort</h3>
+                    <p>Merge sort is a sorting algorithm that works by dividing an
+                        array into smaller subarrays, sorting each subarray, and
+                        then merging the sorted subarrays back together to fo
+                        the final sorted array.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                </div>
+                <div class="project">
+                <img src="/image/calcu.jpg"> 
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>A simple calculator in which we can perform basic
+                        arithmetic 0Frations like addition, sutnrxti(N1,
+                        multiplication. or division.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>  
+                </div>
+                <div class="project">
+                <img src="/image/cesar cypher.jpg">  
+                <div class="layer">
+                    <h3>Caesar Cipher</h3>
+                    <p>The Caesar Cipher technique is one of the earliest and
+                        simplest methodss of encryrnion technique. It's simply a
+                        type of substitution cipher, i.e. each letter of a given text is
+                        replaced by a letter with a fixed of positions down
+                        the alphabet.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+            </div>
+            </div> 
+        <!--------------------------------Contact------------------------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="contact-left">
+                    <h1 class="sub-title">GET IN <span>Touch</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>pradhansumit957@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>01453217</p>
+                    <div class="social-icons">
+                       <a href="https://www.facebook.com/profile.php?id=100085815993372"><i class="fab fa-facebook-f"></i></a>
+                       <a href="https://www.instagram.com/sumitpradhan1850/"><i class="fa-brands fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/in/sumit-pradhan07/"><i class="fa-brands fa-linkedin"></i></a>
+                       <a href="https://twitter.com/Smtpradhan1"><i class="fa-brands fa-twitter-square"></i></a>
+                       <a href="https://github.com/pradhansumitXD"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+                    <a href="/image/Sumit-Pradhan-cv (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                      <input type="text" name="Name"placeholder="Your Name" required> 
+                      <input type="email" name="Email"placeholder="Your Email" required>  
+                      <textarea name="Message" rows="6"placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn btn2 ">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+        </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="cop">
+       <p>Created By <span>Sumit Pradhan</span>  | Copyright © 2023 All rights <i class="fa-solid fa-heart"></i></p> </div>
+    </div>
+ </div>
+</div> 
+<script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script> 
+</body>
+</html>
